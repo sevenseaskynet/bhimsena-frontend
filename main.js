@@ -55,5 +55,22 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
   // Reset form
   this.reset();
 });
+// script.js
+
+// Example: Fill card data dynamically
+document.addEventListener("DOMContentLoaded", () => {
+  const name = "Jane Smith";
+  const id = "789012";
+  const dept = "Marketing";
+  const photoUrl = "https://via.placeholder.com/100";
+
+  document.querySelector(".details").innerHTML = `
+    <p><strong>Name:</strong> ${name}</p>
+    <p><strong>ID:</strong> ${id}</p>
+    <p><strong>Department:</strong> ${dept}</p>
+  `;
+
+  document.querySelector(".photo img").src = photoUrl;
+});
 
   
